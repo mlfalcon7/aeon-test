@@ -1,0 +1,29 @@
+{
+  "image_style": "Professional, modern, technology-focused",
+  "image_dimensions": "1200x630",
+  "brand_colors": ["#1a365d", "#2b6cb0", "#4299e1"],
+  "categories": {
+    "data-centers": {
+      "prompt_template": "Modern data center server room with security cameras, blue LED lighting, professional corporate atmosphere, high-tech surveillance equipment, clean and organized, photorealistic",
+      "alt_text_template": "Security system in data center - {{keyword}}"
+    },
+    "parques-solares": {
+      "prompt_template": "Solar panel farm with thermal camera surveillance, aerial view of solar installation, security monitoring equipment, Brazilian landscape, professional industrial photography",
+      "alt_text_template": "Thermal monitoring for solar park - {{keyword}}"
+    },
+    "mineracao": {
+      "prompt_template": "Mining operation with CCTV security cameras, heavy machinery, safety equipment, professional industrial surveillance, Brazilian mining site, photorealistic",
+      "alt_text_template": "Mining security system - {{keyword}}"
+    },
+    "monitoramento": {
+      "prompt_template": "Modern security operations center (SOC), multiple monitors displaying camera feeds, professional operators, 24/7 monitoring room, blue ambient lighting, corporate security",
+      "alt_text_template": "24/7 monitoring center - {{keyword}}"
+    },
+    "default": {
+      "prompt_template": "Professional electronic security installation, CCTV cameras, access control systems, modern building security, corporate environment, photorealistic",
+      "alt_text_template": "Electronic security solution - {{keyword}}"
+    }
+  },
+  "featured_image_prompt": "Create a professional featured image for a blog post about: {{keyword}}. Style: Modern, corporate, technology-focused. Include subtle references to electronic security and surveillance.",
+  "thumbnail_prompt": "Minimalist icon-style image representing: {{keyword}}. Clean design, professional look, suitable for blog thumbnail."
+}

@@ -1,0 +1,20 @@
+{
+  "company_name": "AEON",
+  "company_description": "AEON is a leading provider of electronic security solutions, specializing in CFTV (CCTV), access control, thermal cameras, and 24/7 monitoring for critical infrastructure including data centers, solar parks, mining operations, and industrial facilities across Brazil.",
+  "target_audience": "IT managers, facility managers, security directors, and decision-makers in companies with critical infrastructure",
+  "tone": "Professional, authoritative, and solution-oriented",
+  "language": "Brazilian Portuguese (pt-BR)",
+  "blog_structure": {
+    "introduction": "Hook the reader with a relevant problem or statistic about security challenges",
+    "sections": [
+      "Problem identification and industry context",
+      "Solution overview and benefits",
+      "Implementation considerations",
+      "Case study or practical example",
+      "Call to action"
+    ],
+    "word_count": "1200-1500 words",
+    "seo_guidelines": "Include the main keyword in title, first paragraph, and at least 2 subheadings"
+  },
+  "prompt_template": "You are an expert content writer for AEON, a Brazilian electronic security company. Write a comprehensive blog post in Brazilian Portuguese about: {{keyword}}\n\nCategory: {{category}}\nLocation focus: {{state}}\nSolution type: {{solution}}\n\nRequirements:\n1. Write in Brazilian Portuguese (pt-BR)\n2. Use a professional, authoritative tone\n3. Structure the article with clear H2 and H3 headings\n4. Include practical benefits and implementation considerations\n5. Reference the specific location/region when relevant\n6. End with a call to action mentioning AEON's services\n7. Target word count: 1200-1500 words\n8. Make the content SEO-friendly with the keyword naturally integrated\n\nFormat the output as JSON with these fields:\n- title: The blog post title\n- meta_description: A 150-160 character meta description\n- content: The full HTML content of the blog post with proper heading tags\n- tags: An array of relevant tags\n- excerpt: A 2-3 sentence excerpt for previews"
+}
