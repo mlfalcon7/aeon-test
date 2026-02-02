@@ -1,29 +1,42 @@
 {
-  "image_style": "Professional, modern, technology-focused",
   "image_dimensions": "1200x630",
+  "aspect_ratio": "1.91:1",
   "brand_colors": ["#1a365d", "#2b6cb0", "#4299e1"],
-  "categories": {
-    "data-centers": {
-      "prompt_template": "Modern data center server room with security cameras, blue LED lighting, professional corporate atmosphere, high-tech surveillance equipment, clean and organized, photorealistic",
-      "alt_text_template": "Security system in data center - {{keyword}}"
-    },
-    "parques-solares": {
-      "prompt_template": "Solar panel farm with thermal camera surveillance, aerial view of solar installation, security monitoring equipment, Brazilian landscape, professional industrial photography",
-      "alt_text_template": "Thermal monitoring for solar park - {{keyword}}"
-    },
-    "mineracao": {
-      "prompt_template": "Mining operation with CCTV security cameras, heavy machinery, safety equipment, professional industrial surveillance, Brazilian mining site, photorealistic",
-      "alt_text_template": "Mining security system - {{keyword}}"
-    },
-    "monitoramento": {
-      "prompt_template": "Modern security operations center (SOC), multiple monitors displaying camera feeds, professional operators, 24/7 monitoring room, blue ambient lighting, corporate security",
-      "alt_text_template": "24/7 monitoring center - {{keyword}}"
-    },
-    "default": {
-      "prompt_template": "Professional electronic security installation, CCTV cameras, access control systems, modern building security, corporate environment, photorealistic",
-      "alt_text_template": "Electronic security solution - {{keyword}}"
-    }
+  "global_rules": {
+    "style": "Professional, modern, technology-focused, corporate B2B",
+    "render_mode": "photorealistic (preferred) or high-end 3D render",
+    "composition": "clean, minimal clutter, strong focal point, ample negative space for headline overlay (but do NOT generate text in the image unless requested)",
+    "lighting": "cool blue ambient + neutral key light, high contrast but not harsh, premium corporate look",
+    "locale_cues": "Brazilian industrial context when relevant (subtle; avoid flags/text/logos)",
+    "brand_safety": "no logos, no trademarks, no readable signage, no brand names written in-scene",
+    "people_policy": "optional; if people appear, use professionals in PPE or SOC operators; avoid identifiable faces (back/side view or shallow DOF)",
+    "quality_tags": "ultra sharp, high detail, realistic textures, professional commercial photography",
+    "negative_prompt": "cartoon, anime, childish, low-res, blurry, watermark, signature, distorted hands, deformed faces, extra limbs, readable text, logos, UI screenshots"
   },
-  "featured_image_prompt": "Create a professional featured image for a blog post about: {{keyword}}. Style: Modern, corporate, technology-focused. Include subtle references to electronic security and surveillance.",
-  "thumbnail_prompt": "Minimalist icon-style image representing: {{keyword}}. Clean design, professional look, suitable for blog thumbnail."
+  "inputs": {
+    "keyword": "{{keyword}}",
+    "category": "{{category}}",
+    "solution": "{{solution}}",
+    "state": "{{state}}"
+  },
+  "prompt_templates": {
+    "featured_image": "Create a featured image for a Brazilian B2B electronic security blog post. Size: 1200x630 (1.91:1). Style: professional, modern, technology-focused, corporate. Render: photorealistic or high-end 3D render. Central concept (category): {{category}}. Topic keyword: {{keyword}}. Solution focus: {{solution}}. Location context: {{state}} (only if provided). Include subtle visual cues of electronic security (CCTV cameras, access control readers, perimeter sensors, thermal imaging, SOC monitoring screens) but do NOT include readable text, logos, or branded markings. Composition: clean, premium, ample negative space for headline overlay, strong focal point, cool blue ambient lighting, realistic textures, high detail. Avoid clutter. Negative: cartoon, watermark, signature, readable text, logos, blurry, low-res.",
+    "inline_image": "Create an in-article supporting image. Size: 1200x630 (1.91:1). Style: professional corporate tech, photorealistic. Central concept: {{category}}. Emphasize one clear element related to {{solution}} and {{keyword}} (single focal object/scene). Keep background minimal, cool blue lighting, realistic industrial/corporate setting. No text/logos/watermarks. Negative: cartoon, blurry, low-res, readable text, logos.",
+    "thumbnail": "Create a minimalist thumbnail illustration. Size: 600x600 (1:1). Style: clean vector or semi-isometric icon, corporate tech. Central concept: {{category}} related to {{keyword}} and {{solution}}. Use brand colors subtly (navy/blue palette). Simple shapes, high contrast, no text, no logos, plain background. Negative: clutter, gradients too heavy, photorealistic faces, readable text, watermark."
+  },
+  "alt_text_templates": {
+    "featured": "{{solution}} para {{category}} no Brasil - {{keyword}}",
+    "inline": "Exemplo visual de {{solution}} aplicado a {{category}} - {{keyword}}",
+    "thumbnail": "Ícone de {{solution}} - {{keyword}}"
+  },
+  "category_examples": [
+    "Data center: controle de acesso em entrada de sala crítica",
+    "Mineração: monitoramento de correias transportadoras e pátio",
+    "Parque solar: câmera térmica para perímetro e hotspots",
+    "Indústria: PIDS em perímetro com cerca e sensores",
+    "SOC 24/7: operadores monitorando múltiplos feeds em sala moderna",
+    "Controle de acesso: catraca/torniquete com leitor biométrico em ambiente corporativo",
+    "CFTV: câmera PTZ em área ampla com baixa luminosidade",
+    "Perímetro: detecção de intrusão com sensores e iluminação de segurança"
+  ]
 }
