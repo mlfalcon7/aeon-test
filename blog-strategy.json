@@ -1,20 +1,51 @@
 {
   "company_name": "Aeon Security",
-  "company_description": "Aeon Security is a leading provider of electronic security solutions, specializing in CFTV (CCTV), access control, PIDS, thermal cameras, and 24/7 monitoring for critical infrastructure including data centers, solar parks, mining operations, and industrial facilities across Brazil.",
-  "target_audience": "IT managers, facility managers, security directors, and decision-makers in companies with critical infrastructure",
-  "tone": "Professional, authoritative, and solution-oriented",
+  "company_description": "Aeon Security é uma provedora brasileira de soluções de segurança eletrônica, com foco em CFTV (CCTV), controle de acesso, PIDS, câmeras térmicas e monitoramento 24/7 para infraestrutura crítica (data centers, parques solares, mineração e ambientes industriais) no Brasil.",
+  "target_audience": "Gerentes de TI, gestores de facilities, diretores/coordenadores de segurança, engenharia e tomadores de decisão em empresas com infraestrutura crítica",
+  "tone": "Profissional, técnico, objetivo e orientado a solução (sem exageros comerciais)",
   "language": "Brazilian Portuguese (pt-BR)",
   "blog_structure": {
-    "introduction": "Hook the reader with a relevant problem or statistic about security challenges",
-    "sections": [
-      "Problem identification and industry context",
-      "Solution overview and benefits",
-      "Implementation considerations",
-      "Case study or practical example",
-      "Call to action"
-    ],
-    "word_count": "1200-1500 words",
-    "seo_guidelines": "Include the main keyword in title, first paragraph, and at least 2 subheadings. Maintain 1-2% keyword density throughout."
+    "word_count": "1200-1800 words",
+    "seo_guidelines": "Incluir a keyword principal no título, no primeiro parágrafo e em pelo menos 2 H2. Densidade aproximada 1–2% da keyword (sem repetição forçada). Usar sinônimos e variações naturais."
   },
-  "prompt_template": "You are an expert content writer for AEON, a Brazilian electronic security company. Write a comprehensive blog post in Brazilian Portuguese about: {{keyword}}\n\nCategory: {{category}}\nLocation focus: {{state}}\nSolution type: {{solution}}\n\nRequirements:\n1. Write in Brazilian Portuguese (pt-BR)\n2. Use a professional, authoritative tone\n3. Structure the article with clear H2 and H3 headings\n4. Include practical benefits and implementation considerations\n5. Reference the specific location/region when relevant and if it's contained in the prompt\n6. End with a call to action using one of the CTA templates (if written)\n7. Target word count: 1200-1800 words\n8. Make the content SEO-friendly with the keyword naturally integrated (aim for 1–2% density)\n9. Mention at least 1 of the following NLP entities where contextually relevant:\n- Axis Communications\n- Ôguen\n- Revista de Segurança Eletrônica\n- ABESE\n- Genetec\n- Milestone\n- Digifort\n- ASIS\n- SIA\n- ISC West\n- Motorola\n- Irisity\n- Hanwha Vision\n- domarkaba\n- Assa Abloy\n\nIMPORTANT HTML FORMATTING:\n- Do NOT include an <h1> tag in the HTML content\n- WordPress will automatically use the 'title' field as the page H1\n- Your HTML content must start with <h2> for section headings\n- Use <h3> for subsections within each <h2> section\n- Format: <h2>Section Title</h2> followed by <p> paragraphs\n\nFormat the output as JSON with these fields:\n- title: The blog post title (this becomes the WordPress H1)\n- meta_description: A 150-160 character meta description\n- content: The full HTML content starting with <h2> (NO <h1> tag)\n- tags: An array of relevant tags\n- excerpt: A 2-3 sentence excerpt for previews\n\nUse one of the following CTAs at the end:\nCTA Templates:\n1. Entre em contato com a Aeon para uma avaliação gratuita de segurança.\n2. Fale com nossos especialistas e descubra como proteger sua infraestrutura crítica com a Aeon Security.\n3. Solicite uma demonstração personalizada das soluções de segurança eletrônica da Aeon."
+  "diversity_controls": {
+    "angle_options": [
+      "seguranca_patrimonial",
+      "ssoma_nr22_compliance",
+      "continuidade_operacional",
+      "ciberseguranca_para_cftv",
+      "arquitetura_rede_e_storage",
+      "analytics_e_reducao_falsos_alarmas",
+      "integracao_vms_controle_acesso",
+      "projeto_para_ambiente_extremo"
+    ],
+    "hook_types": [
+      "dor_operacional",
+      "erro_comum_de_projeto",
+      "cenario_real_sem_numeros",
+      "pergunta_direta",
+      "mito_vs_realidade",
+      "checklist_de_decisao"
+    ],
+    "structure_variants": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "persona_lenses": [
+      "TI",
+      "Seguranca",
+      "Operacoes",
+      "Facilities"
+    ],
+    "uniqueness_rules": [
+      "Criar pelo menos 2 H2 únicos e específicos do cenário (não genéricos).",
+      "Incluir 1 bloco curto de 'Observação de campo' (1–2 frases) com detalhe prático do ambiente, sem números inventados.",
+      "Evitar frases clichê/boilerplate como: 'em um mundo cada vez mais', 'com o avanço da tecnologia', 'é fundamental destacar'.",
+      "Não repetir a mesma frase de transição em mais de 2 seções.",
+      "Não repetir o mesmo parágrafo de conclusão entre artigos."
+    ]
+  },
+  "prompt_template": "Você é um redator técnico e consultivo da AEON (segurança eletrônica no Brasil). Escreva um post completo em pt-BR sobre: {{keyword}}\n\nCategoria: {{category}}\nFoco de localização (use APENAS se fornecido): {{state}}\nTipo de solução: {{solution}}\n\nPARAMETROS DE DIVERSIDADE (se vierem preenchidos, siga; se não vierem, escolha UMA opção de cada lista de forma variada):\n- Ângulo principal: {{angle}}  (opções: seguranca_patrimonial | ssoma_nr22_compliance | continuidade_operacional | ciberseguranca_para_cftv | arquitetura_rede_e_storage | analytics_e_reducao_falsos_alarmas | integracao_vms_controle_acesso | projeto_para_ambiente_extremo)\n- Tipo de gancho de introdução: {{hook_type}} (opções: dor_operacional | erro_comum_de_projeto | cenario_real_sem_numeros | pergunta_direta | mito_vs_realidade | checklist_de_decisao)\n- Variante de estrutura: {{structure_variant}} (A, B, C, D)\n- Persona: {{persona}} (TI | Seguranca | Operacoes | Facilities)\n\nDADOS OPCIONAIS (se vierem preenchidos, use; se não vierem, ignore):\n- Estatísticas/Fontes aprovadas: {{approved_stats_sources}}\n- Notas de case real (aprovado): {{approved_case_notes}}\n- Métricas aprovadas do case (aprovado): {{approved_case_metrics}}\n\nREGRAS CRÍTICAS (obrigatórias):\n1) NÃO invente estatísticas, números, percentuais, prazos, áreas (hectares), quantidades de câmeras, reduções de incidentes ou qualquer métrica.\n   - Só use números se estiverem em {{approved_stats_sources}} ou {{approved_case_metrics}}.\n\n2) NÃO invente \"case de sucesso\".\n   - Se {{approved_case_notes}} estiver vazio, use a seção como \"Exemplo típico de implementação\" e NÃO inclua métricas específicas.\n\n3) Proibido superlativos e claims difíceis de provar (\"líder\", \"número 1\", \"o melhor\").\n\n4) Afirmações técnicas devem ser contextualizadas (\"tipicamente\", \"conforme o ponto\", \"dependendo do ambiente\", \"de acordo com especificação do fabricante\").\n\n5) Regulatório/compliance: pode mencionar NR-22 de forma contextual, mas NÃO cite artigos/obrigações específicas sem fonte fornecida.\n\n6) Densidade de keyword: aproximada 1–2% (natural, sem repetição em sequência).\n\n7) Entidades/NLP: mencione 1–2 entidades no máximo, apenas quando fizer sentido técnico (NÃO listar marcas).\n\nENTIDADES DISPONÍVEIS:\n- Axis Communications\n- Ôguen\n- Revista de Segurança Eletrônica\n- ABESE\n- Genetec\n- Milestone\n- Digifort\n- ASIS\n- SIA\n- ISC West\n- Motorola\n- Irisity\n- Hanwha Vision\n- dormakaba\n- ASSA ABLOY\n\nESTRUTURA POR VARIANTE (escolha conforme {{structure_variant}}):\nA) Contexto -> Decisões de projeto -> Rede/Gravação -> Analytics/Integrações -> Exemplo típico/case -> Checklist -> CTA\nB) Erro comum -> Checklist de decisão -> Arquitetura -> Decisões de projeto -> Integrações -> Exemplo típico/case -> CTA\nC) Mito vs Realidade -> Riscos -> Decisões de projeto -> Operação 24/7 -> Cibersegurança -> Exemplo típico/case -> CTA\nD) Pergunta direta -> Impacto operacional -> Arquitetura e continuidade -> Analytics -> Decisões de projeto -> Checklist -> CTA\n\nREGRAS DE DIVERSIDADE (obrigatórias):\n- Criar pelo menos 2 H2 únicos (não genéricos) alinhados ao ângulo.\n- Incluir 1 bloco \"Observação de campo\" (1–2 frases) com detalhe prático do cenário, sem números.\n- Evitar clichês/boilerplate: \"em um mundo cada vez mais\", \"com o avanço da tecnologia\", \"é fundamental destacar\".\n\nIMPORTANTE HTML (WordPress):\n- NÃO inclua <h1> no conteúdo\n- O conteúdo HTML deve começar com <h2>\n- Use <h2> para seções e <h3> para subseções\n- Formato: <h2>Título</h2> seguido de <p>parágrafos</p>\n\nSAÍDA (formato JSON):\n- title\n- meta_description (150–160 caracteres)\n- content (HTML completo começando com <h2>, sem <h1>)\n- tags (array)\n- excerpt (2–3 frases)\n\nCTA (escolha UMA ao final):\n1. Entre em contato com a Aeon para uma avaliação gratuita de segurança.\n2. Fale com nossos especialistas e descubra como proteger sua infraestrutura crítica com a Aeon Security.\n3. Solicite uma demonstração personalizada das soluções de segurança eletrônica da Aeon."
 }
